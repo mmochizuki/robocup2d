@@ -1,0 +1,432 @@
+3647 -1 M CYCLE 3647-0  -------------------------------------------------
+3647 2 M ===receive sense_body
+3647 4 M *************** updateAfterSense ***************
+3647 4 M world_model.cpp (updateAfterSense) call internal update
+3647 2 M ===receive hear [(hear 3647 -82 our 8 "G<0fzY25dH")]
+3647 2 M audio_sensor.cpp (parsePlayerMessage) clear old data
+3647 2 M BallGoalieMessageParser: success! sender = 8  bpos(50.1 15.7) bvel(-0.2 -0.4) gpos(51.3 6.1) gbody -171.0
+3647 4 M audio_memory.cpp: set heard ball: sender=8 pos=(50.100, 15.700) vel=(-0.24, -0.43)
+3647 4 M audio_memory.cpp: set heard goalie: sender=8 pos=(51.30, 6.10) body=-171.0
+3647 1 M ----- Timeout. msec from sense_body = [14] ms. Timeout count = 1
+3647 1 M player_agent.cpp (isDicisionTiming) estimated cycles till next see ----- 1
+3647 1 M ----- TIMEOUT DECISION !! [14]ms from sense_body
+3647 1 M player_agent.cpp (action) start
+3647 4 M ball_object.cpp (updateByHear) heard_pos=(50.10, 15.70) heard_vel=(-0.24, -0.43)
+3647 4 M ball_object.cpp (updateSelfRelated) update rpos using self move(-0.08 -0.58)
+3647 4 M ball_object.cpp (updateSelfRelated) set rpos by pos
+3647 4 M self_object.cpp (updateBallInfo) kickable=1.111 ball_dist=1.198 rpos=(1.198, -0.015789)
+3647 4 M self_object.cpp (updateBallInfo) kick_power_rate=0.027000 kick_rate=0.000000
+3647 4 M self_object.cpp (updateBallInfo) tackle_prob=0.954 foul_prob=0.994
+3647 4 M world_model.cpp (updateLastKicker) no updated. last_kicker_side=L
+3647 16 M intercept_table.cpp (update)
+3647 16 M Intercept Self. solution size = 15
+3647 16 M ---> Opponent.4 (47.5 16.5) type=4 cycle=4
+3647 16 M ---> Opponent.2 (46.8 8.4) type=1 cycle=6
+3647 16 M ---> Opponent.7 (40.9 15.7) type=5 cycle=31
+3647 16 M ---> Opponent.1 (51.3 6.1) type=0 cycle=31
+3647 16 M ---> Opponent.6 (42.9 6.6) type=3 cycle=31
+3647 16 M ---> Opponent.3 (45.3 2.0) type=7 cycle=31
+3647 16 M ---> Opponent.5 (46.5 -4.2) type=15 cycle=31
+3647 16 M ---> Opponent.8 (36.6 -2.5) type=16 cycle=31
+3647 16 M ---> Opponent.11 (23.5 4.9) type=14 cycle=31
+3647 16 M ---> Opponent.9 (19.2 27.9) type=9 cycle=36
+3647 16 M ---> Opponent.10 (19.6 -14.5) type=6 cycle=39
+3647 16 M ---> Teammate 11.(47.2 4.6) type=14 cycle=10
+3647 16 M ---> Teammate 8.(37.2 17.2) type=16 cycle=14
+3647 16 M ---> Teammate 6.(32.3 10.4) type=3 cycle=31
+3647 16 M ---> Teammate 7.(42.6 -1.9) type=5 cycle=31
+3647 16 M ---> Teammate 9.(46.4 -6.6) type=9 cycle=31
+3647 16 M ---> Teammate 4.(14.9 -9.3) type=4 cycle=44
+3647 16 M ---> Teammate 3.(1.3 15.1) type=7 cycle=50
+3647 16 M ---> Teammate 5.(1.8 25.4) type=15 cycle=56
+3647 16 M ---> Teammate 2.(-1.0 -0.1) type=1 cycle=53
+3647 16 M ---> Teammate 1.(-48.2 5.5) type=0 cycle=98
+3647 16 M <-----Intercept Self reach cycle = 1. exhaust reach step = 1000
+3647 16 M <-----Intercept Teammate  fastest reach step = 10. teammate 11 (47.2 4.6)
+3647 16 M <-----Intercept Teammate  2nd     reach step = 14. teammate 8 (37.2 17.2)
+3647 16 M <-----Intercept Opponent  fastest reach step = 4. opponent 4 (47.5 16.5)
+3647 16 M <-----Intercept Opponent  2nd     reach step = 6. opponent 2 (46.8 8.4)
+3647 131072 M strategy.cpp: Situation Offense
+3647 131072 M strategy.cpp: HOME POSITION: ball pos=(50.3 15.5) step=1
+3647 131072 M __ 1 home pos (-50.00 0.00) type=0
+3647 131072 c -50.0000 0.0000 0.5000 #000000
+3647 131072 M __ 2 home pos (2.69 -3.58) type=-1
+3647 131072 c 2.6928 -3.5764 0.5000 #000000
+3647 131072 M __ 3 home pos (0.78 10.10) type=1
+3647 131072 c 0.7808 10.0963 0.5000 #000000
+3647 131072 M __ 4 home pos (11.81 -13.84) type=-1
+3647 131072 c 11.8052 -13.8370 0.5000 #000000
+3647 131072 M __ 5 home pos (3.19 23.07) type=1
+3647 131072 c 3.1857 23.0674 0.5000 #000000
+3647 131072 M __ 6 home pos (43.28 5.74) type=0
+3647 131072 c 43.2843 5.7421 0.5000 #000000
+3647 131072 M __ 7 home pos (43.85 -3.57) type=-1
+3647 131072 c 43.8499 -3.5733 0.5000 #000000
+3647 131072 M __ 8 home pos (44.13 12.55) type=1
+3647 131072 c 44.1317 12.5515 0.5000 #000000
+3647 131072 M __ 9 home pos (47.90 -7.22) type=-1
+3647 131072 c 47.8998 -7.2209 0.5000 #000000
+3647 131072 M __ 10 home pos (49.16 19.73) type=1
+3647 131072 c 49.1598 19.7330 0.5000 #000000
+3647 131072 M __ 11 home pos (47.73 3.24) type=0
+3647 131072 c 47.7261 3.2421 0.5000 #000000
+3647 131072 M sample_player.cpp: (doPreProcess)
+3647 128 M chain_action/bhv_normal_dribble.cpp: (finished). not finished yet.
+3647 128 M chain_action/bhv_normal_dribble.cpp: (intention:execute) turn=0 dash=2
+3647 128 M chain_action/bhv_normal_dribble.cpp: (doDash) power=100.0  accel_mag=0.54
+3647 8 M action_effector.cpp (setDash) register dash. power=100.0, dir=0.0
+3647 8 M action_effector.cpp (conserve_dash_power) conserved power = 100.0
+3647 1 M action_effector.cpp (setDash) power=100.000 dir=0.000, accel=(-0.075, -0.532) r=0.537 th=-98.000
+3647 128 M chain_action/bhv_normal_dribble.cpp: (intention:execute). done
+3647 128 M chain_action/bhv_normal_dribble.cpp: (intention:execute) default view synch
+3647 128 M chain_action/bhv_normal_dribble.cpp: (intention:execute) default turn_neck scan field
+3647 131072 M sample_player.cpp: do queued intention
+3647 131072 M sample_player.cpp: preprocess done
+3647 8 M view_synch.cpp:56: change to narrow
+3647 8 M player_agent.cpp: agent->doChangeView. width(60) will break see synch...
+3647 8 M neck_turn_to_ball_or_scan.cpp: Neck_TurnToBallOrScan count_thr=0
+3647 8 M neck_turn_to_ball_or_scan.cpp: turn neck to ball
+3647 8 M basic_actions.cpp: Neck_TurnToBall
+3647 8 M basic_actions.cpp: (Neck_TurnToBall) ball_next=(50.30, 15.48) ball_angle=-104.6 rel_angle=-6.6, next_view=120.0
+3647 8 M basic_actions.cpp: (Neck_TurnToBall) visible distance
+3647 8 M basic_actions.cpp: (Neck_TurnToBall) target_angle=-138.0 moment=0.0
+3647 8 M action_effector.cpp (setTurnNeck) register turn_neck. moment=0.0
+3647 262144 M sample_communication.cpp: (sayBallAndPlayers) no send situation
+3647 8 M action_effector.cpp (setAttentionto) register attentionto. side= 1, unum= 9
+3647 1 M ---- send[(dash 100)(turn_neck 0)(attentionto our 9)]
+3647 1 M player_agent.cpp (action) elapsed 0.239000 [ms]
+3647 4 M WM: BALL pos=(50.435949, 15.889738), vel=(-0.135500, -0.409243, r=0.431092, ang=-108.319670)
+3647 4 M WM: SELF move=(-0.076728, -0.582806, r=0.587835, th=-97.500000)
+3647 4 M WM: BALL rpos=(-0.182391 -1.184333) prev_rpos=(-0.094279 -1.348254) diff=(-0.088112 0.163921)
+3647 4 M ---> ball_move=(-0.164840 -0.418885) vel=(-0.154949, -0.393752, r=0.423143, th=-111.480625)
+3647 1 M ----- Timeout. msec from sense_body = [25] ms. Timeout count = 2
+3647 1 M ----- Timeout. msec from sense_body = [36] ms. Timeout count = 3
+3647 1 M ----- Timeout. msec from sense_body = [46] ms. Timeout count = 4
+3647 1 M ----- Timeout. msec from sense_body = [57] ms. Timeout count = 5
+3647 1 M ----- Timeout. msec from sense_body = [68] ms. Timeout count = 6
+3647 1 M ----- Timeout. msec from sense_body = [78] ms. Timeout count = 7
+3647 1 M ----- Timeout. msec from sense_body = [90] ms. Timeout count = 8
+3647 1 M ----- Timeout. msec from sense_body = [101] ms. Timeout count = 9
+3648 -1 M CYCLE 3648-0  -------------------------------------------------
+3648 2 M ===receive sense_body
+3648 4 M *************** updateAfterSense ***************
+3648 4 M world_model.cpp (updateAfterSense) call internal update
+3648 2 M ===receive hear [(hear 3648 -2 our 9 "RK234N> EB")]
+3648 2 M audio_sensor.cpp (parsePlayerMessage) clear old data
+3648 2 M ThreePlayerMessageParser: success! (unum=14 (45.15 1.91)), (unum=16 (46.41 -3.76)), (unum=19 (36.33 -1.24))
+3648 4 M audio_memory.cpp: set heard player. sender=9 unum=14 pos=(45.15, 1.91) no body
+3648 4 M audio_memory.cpp: set heard player. sender=9 unum=16 pos=(46.41, -3.76) no body
+3648 4 M audio_memory.cpp: set heard player. sender=9 unum=19 pos=(36.33, -1.24) no body
+3648 2 M ===receive see --- [5]ms from sense_body
+3648 1 M see_state.cpp (updateBySee) see update, prev timing = 999.  current timing = 999
+3648 4 M *************** updateAfterSee *****************
+3648 4 M ball_object.cpp (updateAll)
+3648 4 M ball_object.cpp (updatePos) pos(50.27 15.44) count=0
+3648 4 M ball_object.cpp (updateOnlyRelativePos) rpos=(-0 -0.88) error=(0.025586 0.047652)
+3648 4 M ball_object.cpp (updateOnlyVel) vel=(-0 -0.38) error=(0.019261 0.013819) count=0
+3648 1 M player_agent.cpp (handleMessage) Got see info: decide action
+3648 1 M player_agent.cpp (action) start
+3648 4 M self_object.cpp (updateBallInfo) kickable=1.111 ball_dist=0.906 rpos=(0.903, -0.078960)
+3648 4 M self_object.cpp (updateBallInfo) kick_power_rate=0.027000 kick_rate=0.021971
+3648 4 M self_object.cpp (updateBallInfo) tackle_prob=0.992 foul_prob=1.000
+3648 4 M world_model.cpp (updateLastKicker) no updated. last_kicker_side=L
+3648 16 M intercept_table.cpp (update)
+3648 16 M Intercept Self. already kickable. no estimation loop!
+3648 16 M ---> Opponent.4 (47.7 15.3) type=4 cycle=4
+3648 16 M ---> Opponent.2 (46.8 8.1) type=1 cycle=9
+3648 16 M ---> Opponent.1 (51.5 6.4) type=0 cycle=10
+3648 16 M ---> Opponent.7 (40.5 15.3) type=5 cycle=12
+3648 16 M ---> Opponent.6 (42.2 5.7) type=3 cycle=15
+3648 16 M ---> Opponent.3 (45.6 2.2) type=7 cycle=16
+3648 16 M ---> Opponent.5 (46.4 -3.8) type=15 cycle=21
+3648 16 M ---> Opponent.8 (36.3 -1.2) type=16 cycle=25
+3648 16 M ---> Opponent.11 (23.1 4.1) type=14 cycle=29
+3648 16 M ---> Opponent.9 (19.2 27.9) type=9 cycle=35
+3648 16 M ---> Opponent.10 (19.4 -15.9) type=6 cycle=45
+3648 16 M ---> Teammate 11.(47.5 4.5) type=14 cycle=12
+3648 16 M ---> Teammate 8.(37.0 17.3) type=16 cycle=16
+3648 16 M ---> Teammate 7.(42.6 -2.2) type=5 cycle=22
+3648 16 M ---> Teammate 6.(31.6 9.4) type=3 cycle=21
+3648 16 M ---> Teammate 9.(45.8 -7.8) type=9 cycle=27
+3648 16 M ---> Teammate 4.(14.3 -10.0) type=4 cycle=49
+3648 16 M ---> Teammate 3.(1.0 15.5) type=7 cycle=52
+3648 16 M ---> Teammate 5.(1.8 24.9) type=15 cycle=57
+3648 16 M ---> Teammate 2.(-1.5 -0.6) type=1 cycle=56
+3648 16 M ---> Teammate 1.(-48.4 4.2) type=0 cycle=100
+3648 16 M <-----Intercept Self reach cycle = 0. exhaust reach step = 1000
+3648 16 M <-----Intercept Teammate  fastest reach step = 12. teammate 11 (47.5 4.5)
+3648 16 M <-----Intercept Teammate  2nd     reach step = 16. teammate 8 (37.0 17.3)
+3648 16 M <-----Intercept Opponent  fastest reach step = 4. opponent 4 (47.7 15.3)
+3648 16 M <-----Intercept Opponent  2nd     reach step = 9. opponent 2 (46.8 8.1)
+3648 131072 M strategy.cpp: Situation Offense
+3648 131072 M strategy.cpp: HOME POSITION: ball pos=(50.3 15.4) step=0
+3648 131072 M ____ 10 offside. home_pos_x 49.17 -> 49.15
+3648 131072 M __ 1 home pos (-50.00 0.00) type=0
+3648 131072 c -50.0000 0.0000 0.5000 #000000
+3648 131072 M __ 2 home pos (2.71 -3.58) type=-1
+3648 131072 c 2.7068 -3.5805 0.5000 #000000
+3648 131072 M __ 3 home pos (0.78 10.10) type=1
+3648 131072 c 0.7821 10.0982 0.5000 #000000
+3648 131072 M __ 4 home pos (11.82 -13.85) type=-1
+3648 131072 c 11.8232 -13.8491 0.5000 #000000
+3648 131072 M __ 5 home pos (3.17 23.06) type=1
+3648 131072 c 3.1694 23.0611 0.5000 #000000
+3648 131072 M __ 6 home pos (43.29 5.76) type=0
+3648 131072 c 43.2900 5.7644 0.5000 #000000
+3648 131072 M __ 7 home pos (43.86 -3.58) type=-1
+3648 131072 c 43.8588 -3.5794 0.5000 #000000
+3648 131072 M __ 8 home pos (44.14 12.59) type=1
+3648 131072 c 44.1356 12.5876 0.5000 #000000
+3648 131072 M __ 9 home pos (47.89 -7.20) type=-1
+3648 131072 c 47.8943 -7.2008 0.5000 #000000
+3648 131072 M __ 10 home pos (49.15 19.73) type=1
+3648 131072 c 49.1525 19.7297 0.5000 #000000
+3648 131072 M __ 11 home pos (47.74 3.21) type=0
+3648 131072 c 47.7408 3.2063 0.5000 #000000
+3648 131072 M sample_player.cpp: (doPreProcess)
+3648 1024 M chain_action/shoot_generator.cpp: PROFILE 0/25. elapsed=0.105 [ms]
+3648 1024 M chain_action/bhv_strict_check_shoot.cpp: no shoot course
+3648 128 M chain_action/bhv_normal_dribble.cpp: (finished). not finished yet.
+3648 128 M chain_action/bhv_normal_dribble.cpp: (intention:execute) turn=0 dash=1
+3648 256 M chain_action/strict_check_pass_generator.cpp (generate) PROFILE passer=self size=0/849 D=0 L=0 T=0 elapsed 0.809000 [ms]
+3648 512 M chain_action/cross_generator.cpp (generate) PROFILE course_size=1/155 elapsed 0.040000 [ms]
+3648 128 M chain_action/short_dribble_generator.cpp: (generate) PROFILE size=7/48 elapsed 0.026 [ms]
+3648 128 M chain_action/self_pass_generator.cpp: (generate) PROFILE size=0/99 elapsed 0.128 [ms]
+3648 1048576 M >>>>> best chain:
+3648 1048576 M 10: evaluation=10000000.000000
+3648 1048576 M __ 0: pass (cross[33]) t=4 from[10](50.27 15.44)-to[11](48.34 5.04)
+3648 1048576 M __ 1: shoot (shoot) t=8 unum=11
+3648 1048576 M chain_action/action_chain_graph.cpp: PROFILE size=2000 elapsed 18.747000 [ms]
+3648 128 M chain_action/bhv_normal_dribble.cpp: (intention:execute) cancel. select other action.
+3648 131072 M chain_action/bhv_chain_action.cpp: Bhv_ChainAction
+3648 131072 M chain_action/bhv_chain_action.cpp (doTurnToForward) already facing the forward direction. angle_diff=10.6
+3648 1048576 M chain 0 pass|cross:11, time = 4
+3648 1048576 M chain 1 shoot|shoot, time = 8
+3648 131072 M chain_action/bhv_chain_action.cpp (Bhv_ChainAction) pass
+3648 131072 M chain_action/bhv_pass_kick_find_receiver.cpp: Bhv_PassKickFindReceiver
+3648 131072 M chain_action/bhv_pass_kick_find_receiver.cpp: pass receiver unum=11 (47.5 4.5)
+3648 131072 M chain_action/bhv_pass_kick_find_receiver.cpp: (doCheckReceiver) exist near opponent. dist=2.63
+3648 131072 M chain_action/bhv_pass_kick_find_receiver.cpp (Bhv_PassKickFindReceiver) pass to 11 receive_pos=(48.3 5.0) speed=2.892
+3648 32 M body_smart_kick.cpp: Body_SmartKick
+3648 32 M kick_table.cpp: simulate() start. target=(48.34 5.04) speed=2.89
+3648 32 M kick_table.cpp: updateState() elapsed 0.049 [ms]
+3648 32 M kick_table.cpp: simulate() found 3 step
+3648 32 M kick_table.cpp: evaluate() candidate size=13
+3648 32 M __ sequence score -40765.82 flag=40 n_kick=1 speed=2.587 last_kick_power=100.000000
+3648 32 M __ sequence score -46473.06 flag=40 n_kick=2 speed=2.531 last_kick_power=100.000000
+3648 32 M __ sequence score 555.89 flag=40 n_kick=3 speed=2.892 last_kick_power=88.220641
+3648 32 M __ sequence score 558.14 flag=40 n_kick=3 speed=2.892 last_kick_power=83.710053
+3648 32 M __ sequence score 558.02 flag=40 n_kick=3 speed=2.892 last_kick_power=83.966651
+3648 32 M __ sequence score 555.58 flag=40 n_kick=3 speed=2.892 last_kick_power=88.838952
+3648 32 M __ sequence score 529.99 flag=40 n_kick=3 speed=2.892 last_kick_power=90.016760
+3648 32 M __ sequence score 555.78 flag=40 n_kick=3 speed=2.892 last_kick_power=88.441155
+3648 32 M __ sequence score 528.50 flag=40 n_kick=3 speed=2.892 last_kick_power=93.003521
+3648 32 M __ sequence score 529.03 flag=40 n_kick=3 speed=2.892 last_kick_power=91.931195
+3648 32 M __ sequence score 529.13 flag=40 n_kick=3 speed=2.892 last_kick_power=91.740704
+3648 32 M __ sequence score 529.40 flag=40 n_kick=3 speed=2.892 last_kick_power=91.201504
+3648 32 M __ sequence score 477.94 flag=40 n_kick=3 speed=2.892 last_kick_power=94.126648
+3648 32 M kick_table.cpp: simulate() result next_pos=(50.07 16.46)  flag=40 n_kick=3 speed=2.89 power=83.71 score=558.14
+3648 32 M kick_table.cpp: simulate() kick_table_elapsed=0.1540 [ms].
+3648 32 M body_smart_kick.cpp: Success! target=(48.34 5.04) speed=2.892 first_speed_thr=2.776 max_step=3 -> achieved_speed=2.892 power=83.71 step=3
+3648 8 M action_effector.cpp (setKick) register kick. power= 63.9, rel_dir= -168.6
+3648 8 M action_effector.cpp: (setKick) Power=63.9  Dir=-168.6  KickRate=0.0220  Accel=1.40
+3648 1 M action_effector.cpp: (setKick) accel=(-0.082100, 1.402247) err=(0.080733, 0.080733)
+3648 8 M player_agent.cpp: (setNeckAction) overwrite exsiting neck action.
+3648 131072 M role_side_forward.cpp: (execute) do chain action
+3648 131072 M view_tactical.cpp: View_Tactical
+3648 131072 M view_tactical.cpp: default synch
+3648 8 M view_synch.cpp:56: change to narrow
+3648 8 M action_effector.cpp (setChangeView) register change_view. width= 60
+3648 131072 M chain_action/neck_turn_to_receiver.cpp: Neck_TurnToReceiver (executeImpl)
+3648 131072 M chain_action/neck_turn_to_receiver.cpp: facePoint=(48.0 4.7) faceAngle=-102.4
+3648 8 M basic_actions.cpp: Neck_TurnToPoint
+3648 8 M basic_actions.cpp:260 Neck_TurnToPoint (48.0 4.7) rel_angle = -4.4
+3648 8 M action_effector.cpp (setTurnNeck) register turn_neck. moment=35.6
+3648 262144 M sample_communication.cpp: (shouldSayBall) check ball vel
+3648 262144 M prev_vel=(-0.14 -0.41) r=0.431
+3648 262144 M cur_vel=(-0.12 -0.38) r=0.394
+3648 262144 M sample_communication.cpp: (sayBallAndPlayers) next cycle kickable.
+3648 8 M action_effector.cpp (addSayMessage) add new say message.[e]
+3648 262144 M sample_communication.cpp: say goalie and player: goalie=1 (51.52 6.39) body=-170.0, player=teammate[10] (0.00 0.00)
+3648 8 M action_effector.cpp (addSayMessage) add new say message.[s]
+3648 262144 M sample_communication.cpp: say self stamina
+3648 262144 M sample_communication.cpp: attentionto most front teammate
+3648 8 M action_effector.cpp (setAttentionto) register attentionto. side= 1, unum= 11
+3648 2 M GoalieAndPlayerMessage. success! goalie=1 (51.50 6.45) x=14.504689 y=26.454141 player num=10 (102.93 49.98) -> [+FjJbwC]
+3648 2 M StaminaMessage. success! value= 4533.9
+3648 8 M action_effector.cpp (makeSayCommand) say message [e+FjJbwCsF]
+3648 1 M ---- send[(kick 63.933 -168.649)(turn_neck 36)(change_view narrow)(attentionto our 11)(say "e+FjJbwCsF")]
+3648 1 M player_agent.cpp (action) elapsed 19.231000 [ms]
+3648 4 M WM: BALL pos=(50.273853, 15.435330), vel=(-0.121304, -0.375111, r=0.394237, ang=-107.920245)
+3648 4 M WM: SELF move=(-0.100336, -0.762131, r=0.768707, th=-97.500000)
+3648 4 M WM: BALL rpos=(-0.203799 -0.882749) prev_rpos=(-0.182391 -1.184333) diff=(-0.021408 0.301584)
+3648 4 M ---> ball_move=(-0.121744 -0.460547) vel=(-0.114440, -0.432914, r=0.447785, th=-104.807267)
+3648 1 M ----- Timeout. msec from sense_body = [35] ms. Timeout count = 1
+3648 1 M ----- Timeout. msec from sense_body = [47] ms. Timeout count = 2
+3648 1 M ----- Timeout. msec from sense_body = [58] ms. Timeout count = 3
+3648 1 M ----- Timeout. msec from sense_body = [69] ms. Timeout count = 4
+3648 1 M ----- Timeout. msec from sense_body = [82] ms. Timeout count = 5
+3648 1 M ----- Timeout. msec from sense_body = [94] ms. Timeout count = 6
+3648 1 M ----- Timeout. msec from sense_body = [105] ms. Timeout count = 7
+3649 -1 M CYCLE 3649-0  -------------------------------------------------
+3649 2 M ===receive sense_body
+3649 4 M *************** updateAfterSense ***************
+3649 4 M world_model.cpp (updateAfterSense) call internal update
+3649 4 M ball_object.cpp (update) queued_kick_accel=(-0.082, 1.402) new_vel=(-0.203 1.027)
+3649 2 M ===receive hear [(hear 3649 -5 our 11 "gP3K_s>")]
+3649 2 M audio_sensor.cpp (parsePlayerMessage) clear old data
+3649 2 M GoalieMessageParser: success! goalie pos = (51.30 6.20) body = -171.0
+3649 4 M audio_memory.cpp: set heard goalie: sender=11 pos=(51.30, 6.20) body=-171.0
+3649 2 M StaminaMessageParser::parse() success! rate=0.986301 stamina=7890.4
+3649 4 M audio_memory.cpp: set heard stamina. sender=11 rate=0.986
+3649 2 M ===receive see --- [5]ms from sense_body
+3649 1 M see_state.cpp (updateBySee) see update, prev timing = 999.  current timing = 999
+3649 4 M *************** updateAfterSee *****************
+3649 4 M ball_object.cpp (updateAll)
+3649 4 M ball_object.cpp (updatePos) pos(50.07 16.38) count=0
+3649 4 M ball_object.cpp (updateOnlyRelativePos) rpos=(-0 0.41) error=(0.040019 0.046395)
+3649 4 M ball_object.cpp (updateOnlyVel) vel=(-0 0.90) error=(0.042634 0.044450) count=1
+3649 1 M player_agent.cpp (handleMessage) Got see info: decide action
+3649 1 M player_agent.cpp (action) start
+3649 4 M self_object.cpp (updateBallInfo) kickable=1.111 ball_dist=0.525 rpos=(-0.358, -0.383711)
+3649 4 M self_object.cpp (updateBallInfo) kick_power_rate=0.027000 kick_rate=0.020715
+3649 4 M self_object.cpp (updateBallInfo) tackle_prob=0.000 foul_prob=0.000
+3649 4 M world_model.cpp (updateLastKicker) self kicked
+3649 16 M intercept_table.cpp (update)
+3649 16 M Intercept Self. already kickable. no estimation loop!
+3649 16 M ---> Opponent.4 (47.7 14.6) type=4 cycle=4
+3649 16 M ---> Opponent.2 (46.6 7.8) type=1 cycle=10
+3649 16 M ---> Opponent.7 (40.5 15.2) type=5 cycle=11
+3649 16 M ---> Opponent.1 (51.4 6.0) type=0 cycle=11
+3649 16 M ---> Opponent.6 (41.9 5.5) type=3 cycle=14
+3649 16 M ---> Opponent.3 (45.6 1.9) type=7 cycle=16
+3649 16 M ---> Opponent.5 (46.6 -3.8) type=15 cycle=23
+3649 16 M ---> Opponent.8 (37.3 -2.0) type=16 cycle=26
+3649 16 M ---> Opponent.11 (23.0 3.8) type=14 cycle=29
+3649 16 M ---> Opponent.9 (19.3 27.9) type=9 cycle=33
+3649 16 M ---> Opponent.10 (19.4 -15.9) type=6 cycle=46
+3649 16 M ---> Teammate 11.(47.5 4.1) type=14 cycle=13
+3649 16 M ---> Teammate 8.(37.0 17.2) type=16 cycle=16
+3649 16 M ---> Teammate 6.(31.9 9.3) type=3 cycle=22
+3649 16 M ---> Teammate 7.(42.2 -2.4) type=5 cycle=24
+3649 16 M ---> Teammate 9.(46.2 -5.8) type=9 cycle=23
+3649 16 M ---> Teammate 4.(14.3 -10.0) type=4 cycle=50
+3649 16 M ---> Teammate 5.(1.8 24.9) type=15 cycle=56
+3649 16 M ---> Teammate 3.(1.0 15.5) type=7 cycle=52
+3649 16 M ---> Teammate 2.(-1.5 -0.6) type=1 cycle=56
+3649 16 M ---> Teammate 1.(-48.4 4.2) type=0 cycle=100
+3649 16 M <-----Intercept Self reach cycle = 0. exhaust reach step = 1000
+3649 16 M <-----Intercept Teammate  fastest reach step = 13. teammate 11 (47.5 4.1)
+3649 16 M <-----Intercept Teammate  2nd     reach step = 16. teammate 8 (37.0 17.2)
+3649 16 M <-----Intercept Opponent  fastest reach step = 4. opponent 4 (47.7 14.6)
+3649 16 M <-----Intercept Opponent  2nd     reach step = 10. opponent 2 (46.6 7.8)
+3649 131072 M strategy.cpp: Situation Offense
+3649 131072 M strategy.cpp: HOME POSITION: ball pos=(50.1 16.4) step=0
+3649 131072 M ____ 10 offside. home_pos_x 49.18 -> 48.90
+3649 131072 M __ 1 home pos (-50.00 0.00) type=0
+3649 131072 c -50.0000 0.0000 0.5000 #000000
+3649 131072 M __ 2 home pos (2.68 -3.43) type=-1
+3649 131072 c 2.6842 -3.4336 0.5000 #000000
+3649 131072 M __ 3 home pos (0.67 10.32) type=1
+3649 131072 c 0.6694 10.3233 0.5000 #000000
+3649 131072 M __ 4 home pos (12.06 -13.56) type=-1
+3649 131072 c 12.0574 -13.5635 0.5000 #000000
+3649 131072 M __ 5 home pos (2.97 23.32) type=1
+3649 131072 c 2.9650 23.3240 0.5000 #000000
+3649 131072 M __ 6 home pos (43.70 6.09) type=0
+3649 131072 c 43.7036 6.0902 0.5000 #000000
+3649 131072 M __ 7 home pos (43.71 -3.54) type=-1
+3649 131072 c 43.7052 -3.5397 0.5000 #000000
+3649 131072 M __ 8 home pos (44.01 13.01) type=1
+3649 131072 c 44.0051 13.0131 0.5000 #000000
+3649 131072 M __ 9 home pos (47.86 -7.04) type=-1
+3649 131072 c 47.8586 -7.0361 0.5000 #000000
+3649 131072 M __ 10 home pos (48.90 20.25) type=1
+3649 131072 c 48.9029 20.2488 0.5000 #000000
+3649 131072 M __ 11 home pos (47.96 3.45) type=0
+3649 131072 c 47.9566 3.4455 0.5000 #000000
+3649 131072 M sample_player.cpp: (doPreProcess)
+3649 1024 M chain_action/shoot_generator.cpp: PROFILE 0/25. elapsed=0.236 [ms]
+3649 1024 M chain_action/bhv_strict_check_shoot.cpp: no shoot course
+3649 128 M chain_action/bhv_normal_dribble.cpp: finished(). last execute time is not match
+3649 256 M chain_action/strict_check_pass_generator.cpp (generate) PROFILE passer=self size=0/795 D=0 L=0 T=0 elapsed 0.600000 [ms]
+3649 512 M chain_action/cross_generator.cpp (generate) PROFILE course_size=1/185 elapsed 0.037000 [ms]
+3649 128 M chain_action/short_dribble_generator.cpp: (generate) PROFILE size=11/48 elapsed 0.023 [ms]
+3649 128 M chain_action/self_pass_generator.cpp: (generate) PROFILE size=0/176 elapsed 0.177 [ms]
+3649 1048576 M >>>>> best chain:
+3649 1048576 M 14: evaluation=10000000.000000
+3649 1048576 M __ 0: pass (cross[26]) t=5 from[10](50.07 16.38)-to[11](47.45 3.85)
+3649 1048576 M __ 1: shoot (shoot) t=9 unum=11
+3649 1048576 M chain_action/action_chain_graph.cpp: PROFILE size=2000 elapsed 20.636000 [ms]
+3649 131072 M chain_action/bhv_chain_action.cpp: Bhv_ChainAction
+3649 131072 M chain_action/bhv_chain_action.cpp (doTurnToForward) already facing the forward direction. angle_diff=10.7
+3649 1048576 M chain 0 pass|cross:11, time = 5
+3649 1048576 M chain 1 shoot|shoot, time = 9
+3649 131072 M chain_action/bhv_chain_action.cpp (Bhv_ChainAction) pass
+3649 131072 M chain_action/bhv_pass_kick_find_receiver.cpp: Bhv_PassKickFindReceiver
+3649 131072 M chain_action/bhv_pass_kick_find_receiver.cpp: pass receiver unum=11 (47.5 4.1)
+3649 131072 M chain_action/bhv_pass_kick_find_receiver.cpp: (doCheckReceiver) exist near opponent. dist=2.95
+3649 131072 M chain_action/bhv_pass_kick_find_receiver.cpp (Bhv_PassKickFindReceiver) pass to 11 receive_pos=(47.4 3.8) speed=2.887
+3649 32 M body_smart_kick.cpp: Body_SmartKick
+3649 32 M kick_table.cpp: simulate() start. target=(47.45 3.85) speed=2.89
+3649 32 M kick_table.cpp: updateState() elapsed 0.029 [ms]
+3649 32 M kick_table.cpp: simulate() found 3 step
+3649 32 M kick_table.cpp: evaluate() candidate size=16
+3649 32 M __ sequence score -179286.16 flag=40 n_kick=1 speed=1.197 last_kick_power=100.000000
+3649 32 M __ sequence score -35098.39 flag=40 n_kick=2 speed=2.640 last_kick_power=100.000000
+3649 32 M __ sequence score 706.89 flag=40 n_kick=2 speed=2.887 last_kick_power=86.224215
+3649 32 M __ sequence score 626.88 flag=40 n_kick=2 speed=2.887 last_kick_power=96.244865
+3649 32 M __ sequence score -10520.12 flag=40 n_kick=2 speed=2.885 last_kick_power=100.000000
+3649 32 M __ sequence score 557.21 flag=40 n_kick=3 speed=2.887 last_kick_power=85.588806
+3649 32 M __ sequence score 566.77 flag=40 n_kick=3 speed=2.887 last_kick_power=66.469667
+3649 32 M __ sequence score 565.92 flag=40 n_kick=3 speed=2.887 last_kick_power=68.158334
+3649 32 M __ sequence score 565.39 flag=40 n_kick=3 speed=2.887 last_kick_power=69.227274
+3649 32 M __ sequence score 564.46 flag=40 n_kick=3 speed=2.887 last_kick_power=71.088937
+3649 32 M __ sequence score 563.82 flag=40 n_kick=3 speed=2.887 last_kick_power=72.352613
+3649 32 M __ sequence score 564.16 flag=40 n_kick=3 speed=2.887 last_kick_power=71.670682
+3649 32 M __ sequence score 563.68 flag=40 n_kick=3 speed=2.887 last_kick_power=72.638137
+3649 32 M __ sequence score 563.42 flag=40 n_kick=3 speed=2.887 last_kick_power=73.162236
+3649 32 M __ sequence score 562.89 flag=40 n_kick=3 speed=2.887 last_kick_power=74.224156
+3649 32 M __ sequence score 561.66 flag=40 n_kick=3 speed=2.887 last_kick_power=76.672656
+3649 32 M kick_table.cpp: simulate() result next_pos=(49.90 15.46)  flag=40 n_kick=2 speed=2.89 power=86.22 score=706.89
+3649 32 M kick_table.cpp: simulate() kick_table_elapsed=0.1120 [ms].
+3649 32 M body_smart_kick.cpp: Success! target=(47.45 3.85) speed=2.887 first_speed_thr=2.771 max_step=3 -> achieved_speed=2.887 power=86.22 step=2
+3649 8 M action_effector.cpp (setKick) register kick. power= 87.7, rel_dir= 7.9
+3649 8 M action_effector.cpp: (setKick) Power=87.7  Dir=7.9  KickRate=0.0207  Accel=1.82
+3649 1 M action_effector.cpp: (setKick) accel=(-0.004652, -1.817134) err=(0.110775, 0.110775)
+3649 8 M player_agent.cpp: (setNeckAction) overwrite exsiting neck action.
+3649 131072 M role_side_forward.cpp: (execute) do chain action
+3649 131072 M view_tactical.cpp: View_Tactical
+3649 131072 M view_tactical.cpp: default synch
+3649 8 M view_synch.cpp:56: change to narrow
+3649 8 M player_agent.cpp: agent->doChangeView. already same view mode 60
+3649 131072 M chain_action/neck_turn_to_receiver.cpp: Neck_TurnToReceiver (executeImpl)
+3649 131072 M chain_action/neck_turn_to_receiver.cpp: facePoint=(47.4 3.9) faceAngle=-103.8
+3649 8 M basic_actions.cpp: Neck_TurnToPoint
+3649 8 M basic_actions.cpp:260 Neck_TurnToPoint (47.4 3.9) rel_angle = -5.8
+3649 8 M action_effector.cpp (setTurnNeck) register turn_neck. moment=-1.8
+3649 262144 M sample_communication.cpp: (shouldSayBall) check ball vel
+3649 262144 M prev_vel=(-0.12 -0.38) r=0.394
+3649 262144 M cur_vel=(-0.17 0.90) r=0.915
+3649 262144 M sample_communication.cpp: (shouldSayBall) ball vel changed.
+3649 262144 M sample_communication.cpp: (sayBallAndPlayers) next cycle kickable.
+3649 8 M action_effector.cpp (addSayMessage) add new say message.[e]
+3649 262144 M sample_communication.cpp: say goalie and player: goalie=1 (51.45 6.04) body=-170.0, player=teammate[10] (0.00 0.00)
+3649 8 M action_effector.cpp (addSayMessage) add new say message.[s]
+3649 262144 M sample_communication.cpp: say self stamina
+3649 8 M player_agent.cpp: agent->doAttentionto. already attended.
+3649 2 M GoalieAndPlayerMessage. success! goalie=1 (51.44 6.09) x=14.437342 y=26.090565 player num=10 (102.88 49.82) -> [+78wya ]
+3649 2 M StaminaMessage. success! value= 4575.7
+3649 8 M action_effector.cpp (makeSayCommand) say message [e+78wya sG]
+3649 1 M ---- send[(kick 87.723 7.85333)(turn_neck -2)(say "e+78wya sG")]
+3649 1 M player_agent.cpp (action) elapsed 21.159000 [ms]
+3649 4 M WM: BALL pos=(50.074268, 16.375639), vel=(-0.171412, 0.898640, r=0.914842, ang=100.799189)
+3649 4 M WM: SELF move=(-0.055974, -0.334485, r=0.339136, th=-99.500000)
+3649 4 M WM: BALL rpos=(-0.330178 0.407736) prev_rpos=(-0.203799 -0.882749) diff=(-0.126379 1.290485)
+3649 4 M ---> ball_move=(-0.182353 0.956000) vel=(-0.171412, 0.898640, r=0.914842, th=100.799189)
+3649 1 M ----- Timeout. msec from sense_body = [37] ms. Timeout count = 1
+3649 1 M ----- Timeout. msec from sense_body = [48] ms. Timeout count = 2
+3649 1 M ----- Timeout. msec from sense_body = [59] ms. Timeout count = 3
+3649 1 M ----- Timeout. msec from sense_body = [70] ms. Timeout count = 4
+3649 1 M ----- Timeout. msec from sense_body = [80] ms. Timeout count = 5
+3649 1 M ----- Timeout. msec from sense_body = [94] ms. Timeout count = 6
