@@ -1,9 +1,0 @@
-PROGRAM =       AngleDeg
-OBJS    =       AngleDeg.o
-SRCS    =       $(OBJS:%.o=%.cpp)
-CXX      =       g++
-CXXFLAGS  =       -g -Wall
-LDFLAGS =
-
-$(PROGRAM):$(OBJS)
-	$(CXX) $(CXXFLAGS) $(LDFLAGS) -o $(PROGRAM) $(OBJS) $(LDLIBS)
